@@ -26,7 +26,7 @@ Using the data provided by Galton Families dataset, we fit a linear model to pre
 
 The application is running on (https://javierngkh.shinyapps.io/week4courseradataprdt/)
 
-ui.R, and Server.R Code are on my github repo: (https://github.com/XavierFontane/Course-Project-Shiny-Application-and-Reproducible-Pitch)
+ui.R, and Server.R Code are on my github repo: (https://github.com/remembrance1/Coursera_Developing-Data-Products/tree/master/Week%204)
 
 ## Galton Familities Data Set
 
