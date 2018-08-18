@@ -9,4 +9,4 @@ Shiny Application
 Shiny Presentaiton
 ------------------
 
-Link will be updated soon
+https://rpubs.com/javierngkh/a312
