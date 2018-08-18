@@ -1,0 +1,41 @@
+---
+title: 'Peer-graded Assignment: R Markdown and Leaflet'
+author: "Javier Ng"
+date: "16th August 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My First Leaflet Map
+
+Create a leaflet map object
+
+```{R}
+library(leaflet)
+map <- leaflet() %>% addTiles()
+```
+
+## Create a marker with a picture of NUH and a link to its homepage.
+
+```{R}
+NUH_popup <- makeIcon(
+  iconUrl = "http://www.nuhcs.com.sg",
+  iconWidth = 30*408/255, iconHeight = 30,
+  iconAnchorX = 30*408/255/2, iconAnchorY = 30/2
+)
+
+```
+
+## Add the marker to the map and display the map.
+
+```{R}
+NUH_Icon <- c("<a href= 'http://www.nuhcs.com.sg'>National University Hospital<br>
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/c/c0/KRW_Facade2_final.jpg' 
+                        width='210' height='132'  alt='NUH' title='NUH'></a>")
+map %>%
+  addTiles() %>%
+  addMarkers(lat=1.293487, lng=103.783304, popup = NUH_Icon)
+```
